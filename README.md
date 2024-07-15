@@ -2,7 +2,7 @@
 
 ### Paper under review (an extended paper from "Approximating Multi-Perspective Trace Alignment Using Trace Encodings (BPM 2023)")
 
-This repository contains the scripts developed for the proposed probabilistic approximate approach of multi-perspective alignment.
+This repository contains the scripts developed for a proposed probabilistic approximate approach of multi-perspective alignment.
 
 We evaluated our approach (in probabilistic setting) by using 5 event logs (Synthetic logs: Credit, Pub / Real logs: Helpdesk, Road Fines, Hospital Billing).
 
