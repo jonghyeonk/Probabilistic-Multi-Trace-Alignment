@@ -8,7 +8,7 @@ We evaluated our approach (in probabilistic setting) by using 5 event logs (Synt
 
 1. 'encoding_multinoise.py' and 'encoding_partialnoise.py'
 
-    The two script show the processes (i) to generate non-complying traces by modifying the original traces, (ii) to save ground truth of original traces before modification, and (iii) to encode the prepared experimental datasets. The division between 'multinose' and 'partialnoise' is used for detailed analysis. In table 3-4 of our paper, we used encoded logs with 'multinoise' for performance comparision. We used encoded logs with 'partialnoise' only for deeper analysis on effects of each noise patterns (see Figure 8). The encoded logs will be saved in the folder 'data_trans'.
+    The two script show the processes (i) to generate non-complying traces by modifying the original traces and (ii) to encode the traces for training kNN using 5 encoding methods ('aggregate', 'boolean', 'complexindex', 'laststate', 'p-gram+aggregate'). The division between 'multinose' and 'partialnoise' is used for detailed analysis. In table 3-4 of our paper, we used encoded logs with 'multinoise' for performance comparision. We used encoded logs with 'partialnoise' only for deeper analysis on effects of each noise patterns (see Figure 8). The encoded logs will be saved in the folder 'data_trans'.
 
 2. 'main.py'
 
