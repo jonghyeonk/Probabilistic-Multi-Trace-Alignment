@@ -6,14 +6,14 @@ This repository contains the scripts developed for a proposed probabilistic appr
 
 We evaluated our approach (in probabilistic setting) by using 5 event logs (Synthetic logs: Credit, Pub / Real logs: Helpdesk, Road Fines, Hospital Billing).
 
-1. 'encoding_multinoise.py' and 'encoding_partial.py'
+1. 'encoding_multinoise.py' and 'encoding_partialnoise.py'
 
-    This script shows the processes (i) to generate non-complying traces by modifying the original traces, (ii) to save ground truth of original traces before modification, and (iii) to encode the prepared experimental datasets.
+    This script shows the processes (i) to generate non-complying traces by modifying the original traces, (ii) to save ground truth of original traces before modification, and (iii) to encode the prepared experimental datasets. The division between 'multinose' and 'partialnoise' is used for detailed analysis. In table 3-4 of our paper, we used encoded logs with 'multinoise' for performance comparision. We used encoded logs with 'partialnoise' only for deeper analysis on effects of each noise patterns (see Figure 8). The encoded logs will be saved in the folder 'data_trans'.
 
 2. 'main.py'
 
-    This TBD
+    Using the encoded logs generated from step 1, we implement our developed approach. The summary of result ('precision', 'distance', 'computation time') will be saved in the folder 'result'. Note that if you activate the line 211 in the code, you can get results on 'partialnose'.
 
-4. Folder 'non_schatistic' includes datasets in non-stochastic setting and experimental codes
+3. The others
 
-    This script shows (i) the approximate approach of multi-perspective alignment and (ii) the results by implementing it (the summary of the results is seen in table 3~6 in our paper).
+    The two synthetic logs (Credit and Pub) are generated from the bpmn files ('credit_card.bpmn' and 'mccloud_sim.bpmn' respectively). The scripts for the 5 encoding functions used in our paper can be found in the folder 'tansformers'.
